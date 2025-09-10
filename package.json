@@ -5,7 +5,8 @@
   "main": "src/utils/fetchYouTubeDataForChannels.js",
   "scripts": {
     "test": "jest",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "start": "node server.js"
   },
   "devDependencies": {
     "jest": "^29.7.0"
