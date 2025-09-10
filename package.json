@@ -1,0 +1,20 @@
+{
+  "name": "youtube-analysis",
+  "version": "1.0.0",
+  "description": "Reusable Node.js module for fetching YouTube video metadata using yt-dlp",
+  "main": "src/utils/fetchYouTubeDataForChannels.js",
+  "scripts": {
+    "test": "jest",
+    "server": "nodemon server.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "youtube-dl-exec": "^2.5.8"
+  }
+}
