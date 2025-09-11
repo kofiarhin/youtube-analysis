@@ -1,7 +1,19 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 
 const fetchYouTubeDataForChannels = require("./utils/fetchYouTubeDataForChannels");
+const { CLIENT_URL } = require("./constants/constants");
+
+// setup middlewares
+app.use(
+  cors({
+    origin: CLIENT_URL,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
+
+app.use(express.json());
 
 app.get("/", async (req, res, next) => {
   const result = await fetchYouTubeDataForChannels(
