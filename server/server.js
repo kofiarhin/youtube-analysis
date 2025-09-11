@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const fetchYouTubeDataForChannels = require("./src/utils/fetchYouTubeDataForChannels");
+const fetchYouTubeDataForChannels = require("./utils/fetchYouTubeDataForChannels");
 
 app.get("/", async (req, res, next) => {
   const result = await fetchYouTubeDataForChannels(
